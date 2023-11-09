@@ -30,5 +30,14 @@ public class edit extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView text = findViewById(R.id.text);
+        text.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                // Handle the click event, navigate to forgot_pass.xml
+                Intent intent = new Intent(getApplicationContext(), addtext.class); // Replace with the actual name of your activity
+                startActivity(intent);
+            }
+        });
     }
 }
