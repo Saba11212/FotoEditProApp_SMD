@@ -3,17 +3,16 @@ package com.sabakarim.fotoeditpro_smd;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class filter extends AppCompatActivity {
+public class done extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_filter);
+        setContentView(R.layout.activity_done);
         ImageView back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -23,13 +22,6 @@ public class filter extends AppCompatActivity {
             }
         });
 
-        ImageView check = findViewById(R.id.check);
-        check.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                // Handle the click event, navigate to forgot_pass.xml
-                Intent intent = new Intent(getApplicationContext(), done.class); // Replace with the actual name of your activity
-                startActivity(intent);
-            }
-        });
+
     }
 }

@@ -21,5 +21,14 @@ public class addtext extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView check = findViewById(R.id.check);
+        check.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                // Handle the click event, navigate to forgot_pass.xml
+                Intent intent = new Intent(getApplicationContext(), done.class); // Replace with the actual name of your activity
+                startActivity(intent);
+            }
+        });
     }
 }
