@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sabakarim.fotoeditpro_smd">
+
+    <!-- INTERNET permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,18 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fotoeditpro_SMD"
         tools:targetApi="31">
+
         <activity
-            android:name=".done"
+            android:name=".registrationActivity"
             android:exported="false" />
-        <activity
-            android:name=".addtext"
-            android:exported="false" />
-        <activity
-            android:name=".filter"
-            android:exported="false" />
-        <activity
-            android:name=".edit"
-            android:exported="false" />
+        <activity android:name=".ForgotPasswordActivity" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
@@ -37,5 +35,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
